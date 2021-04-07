@@ -31,6 +31,12 @@ const config = {
                     },
                 },
             },
+            {
+                //*.js
+                test: /\.js$/,
+                exclude: /node_modules/, // not compile node_modules
+                loader: 'babel-loader',
+            }
         ]
     },
     plugins: [
