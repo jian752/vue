@@ -21,6 +21,16 @@ const config = {
                 test: /\.css$/,
                 use: ['vue-style-loader', 'css-loader'],
             },
+            {
+                // picture
+                test: /\.(png|jpg?g|gif|svg)(\?.*)?$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 25000,
+                    },
+                },
+            },
         ]
     },
     plugins: [
