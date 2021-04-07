@@ -54,5 +54,13 @@ const config = {
         hot: true, // hot reload
         open: true, // auto open the web page after successful built
     },
+    // parse path
+    resolve: {
+        // set src alias
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+        },
+        extensions: ['.js', '.vue'],
+    },
 };
 module.exports = config;

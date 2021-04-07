@@ -7,7 +7,7 @@
 
 <script>
 import logo from "./assets/logo.png";
-import getData from "./utils/getData";
+import getData from "@/utils/getData";
 
 export default {
   data() {
