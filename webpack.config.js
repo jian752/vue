@@ -14,5 +14,12 @@ const config = {
             favicon: 'public/favicon.ico',
         }),
     ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 3000,
+        hot: true, // hot reload
+        open: true, // auto open the web page after successful built
+    },
 };
 module.exports = config;
